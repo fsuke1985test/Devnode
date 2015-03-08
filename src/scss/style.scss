@@ -1,0 +1,14 @@
+$color: #FFF;
+$margin-center: 0 auto;
+$gWidth: 1000px;
+$gWidth_min: 800px;
+
+body {
+    background: $color;
+    div.content {
+        width: $gWidth;
+        min-width: $gWidth_min;
+        margin: $margin-center;
+    }
+}
+
