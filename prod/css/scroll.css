@@ -1,0 +1,10 @@
+body {
+  background: #FFF; }
+  body div.content {
+    width: 1000px;
+    min-width: 800px;
+    margin: 0 auto; }
+    body div.content div.outer-box {
+      color: "black";
+      height: 400px;
+      width: 500px; }
