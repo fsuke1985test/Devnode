@@ -21,14 +21,17 @@ gulp.task('copy', function() {
 });
 
 gulp.task('server', function() {
-   gulp.src('./prod/html')
+   gulp.src('./prod')
     .pipe(webserver({
         livereload: true,
+    }))
+    .pipe(plumber({
+        errorHandler: notify.onError("<%= error.message %>")
     }));
 });
 
 gulp.task('watch', ['sass'], function() {
-    gulp.watch('./src/js/*.js');
+    gulp.watch('./src/js/*.js', ['copy']);
     gulp.watch('./src/scss/*.scss', ['sass']);
     gulp.watch('./src/html/*.html', ['copy']);
     gulp.watch('./src/java/*.java', ['copy']);

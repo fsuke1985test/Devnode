@@ -2,17 +2,35 @@ $color: #FFF;
 $margin-center: 0 auto;
 $gWidth: 1000px;
 $gWidth_min: 800px;
+$pageCount: 5;
+$pageOneHeight: 782;
+$pageAllHeight: ($pageOneHeight * $pageCount) + px;
 
+* {
+margin: 0;
+border: 0;
+padding: 0;
+}
 body {
     background: $color;
     div.content {
         width: $gWidth;
         min-width: $gWidth_min;
         margin: $margin-center;
+        height: $pageAllHeight;
+        div.page {
+            height: $pageOneHeight + px;
+            position: relative;
+        }
+        .one {
+            background-color: red;
+        }
         div.outer-box {
-            color: "black";
-            height: 400px;
-            width: 500px;
+            color: black;
+            height: 3em;
+            width: 10em;
+            position: absolute;
+            top:10 + px;
         }
     }
 }

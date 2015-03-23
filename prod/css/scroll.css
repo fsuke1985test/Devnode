@@ -1,10 +1,23 @@
+* {
+  margin: 0;
+  border: 0;
+  padding: 0; }
+
 body {
   background: #FFF; }
   body div.content {
     width: 1000px;
     min-width: 800px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    height: 3910px; }
+    body div.content div.page {
+      height: 782px;
+      position: relative; }
+    body div.content .one {
+      background-color: red; }
     body div.content div.outer-box {
-      color: "black";
-      height: 400px;
-      width: 500px; }
+      color: black;
+      height: 3em;
+      width: 10em;
+      position: absolute;
+      top: 10px; }
